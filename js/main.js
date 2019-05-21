@@ -2,6 +2,7 @@
  	duration: 800,
  	easing: 'slide'
  });
+var view = 0;
 
 var counter1 = function() {
 		
@@ -36,7 +37,7 @@ var config = {
 firebase.initializeApp(config);
 var db = firebase.database();
 var hitsRef = db.ref('views');
-var view = 0
+
 //var hits = document.querySelector("#views");
 
 // Would use for realtime stuff.

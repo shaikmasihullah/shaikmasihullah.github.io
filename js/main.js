@@ -3,6 +3,67 @@
  	easing: 'slide'
  });
 
+var counter1 = function() {
+		
+		$('#section-counter').waypoint( function( direction ) {
+
+			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+
+				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+				$('.number1').each(function(){
+					var $this = $(this),
+						num = view;
+						console.log(num);
+					$this.animateNumber(
+					  {
+					    number: num,
+					    numberStep: comma_separator_number_step
+					  }, 7000
+					);
+				});
+				
+			}
+
+		} , { offset: '95%' } );
+
+	}
+
+var config = {
+  apiKey: "AIzaSyDYpYafwz0TCOVXOYFcLk0_nOiFBxdS5cw",
+  databaseURL: "https://portfolio-e5dee.firebaseio.com",
+  projectId: "portfolio-e5dee",
+};
+firebase.initializeApp(config);
+var db = firebase.database();
+var hitsRef = db.ref('views');
+var view = 0
+//var hits = document.querySelector("#views");
+
+// Would use for realtime stuff.
+// hitsRef.on('value', function(snapshot) {
+//   incrementHits(snapshot.val().numHits);
+// });
+
+hitsRef.once('value').then(function(snapshot) {
+  incrementHits(snapshot.val().hits);
+});
+;
+
+function incrementHits(curValue) {
+	console.log(curValue)
+  var newValue = curValue + 1;
+  view = newValue
+  	counter1();
+  setNewHitsinDB(newValue);
+}
+
+function setNewHitsinDB(value) {
+  hitsRef.set({
+    hits: value
+  });
+}
+
+
 $(document).ready(function($) {
 
 	"use strict";
@@ -113,6 +174,12 @@ $(document).ready(function($) {
 
 	}
 	counter();
+
+
+
+
+
+
 
 	var contentWayPoint = function() {
 		var i = 0;

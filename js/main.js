@@ -54,8 +54,8 @@ function incrementHits(curValue) {
 	console.log(curValue)
   var newValue = curValue + 1;
   view = newValue
-  	counter1();
   setNewHitsinDB(newValue);
+  counter1();
 }
 
 function setNewHitsinDB(value) {

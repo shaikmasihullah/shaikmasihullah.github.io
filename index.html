@@ -1,451 +1,1675 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
-        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!--, shrink-to-fit=no-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masih's Portfolio</title>
 
-    <title>Welcome! Meet the TinkerBoy</title>
-    
-    <meta name="description" content="Personal portfolio of Shaik Masihullah">
-    <meta name="keywords" content="shaik masihullah, masihullah, roboticist, coder,machine learning, shaik,masihulla,masiha,artificial intelligence,ai,ml,tinkerboy">
-    <meta name="author" content="Shaik Masihullah and Colorlib">
-    <meta property='og:title' content="Shaik Masihullah">
-    <meta property='og:image' content="images/person_2.jpg">
-    <meta property='og:description' content="My Personal Portfolio">
-    <meta property='og:url' content="https://shaikmasihullah.github.io">
-    <meta name="google-site-verification" content="Shaik Masihullah , masihullah , shaik masihullah">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-    
-    <link rel="shortcut icon" type="image/png" href="images/port.png"/>
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
 
-    <link rel="stylesheet" href="css/aos.css">
+<body>
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+  <!--
+    - #MAIN
+  -->
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <main>
 
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/topbtn.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <div class="KW_progressContainer">
-      <div class="KW_progressBar">
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/masih_photo.jpg" alt="Shaik Masihullah" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Shaik Masihullah">Shaik Masihullah</h1>
+
+          <p class="title">Data Scientist</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
 
       </div>
-    </div>
-    <div class="page">
-    <nav id="colorlib-main-nav" role="navigation">
-      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
-      <div class="js-fullheight colorlib-table">
-        <div class="img" style="background-image: url(images/person_1.jpg);"></div>
-        <div class="colorlib-table-cell js-fullheight">
-          <div class="row no-gutters">
-            <div class="col-md-12 text-center">
-              <h1 class="mb-10"><a href="index.html" class="logo">Shaik Masihullah</a></h1>
-              <ul>
-                <li class="active"><a href="index.html"><span><small>01</small>Home</span></a></li>
-                <li><a href="about.html"><span><small>02</small>Resume</span></a></li>
-                <li><a href="certificates.html"><span><small>03</small>Certifications</span></a></li>
-                <li><a href="portfolio.html"><span><small>04</small>Projects</span></a></li>
-                <li><a href="blog.html"><span><small>05</small>Fun Learn</span></a></li>
-                <li><a href="contact.html"><span><small>06</small>Contact</span></a></li>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:masihulla17@gmail.com" class="contact-link">masihulla17@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917674026786" class="contact-link">+91 7674026786</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Proddatur, Andhra Pradesh, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/shaik-masihullah/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Masihullah17" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <!-- <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li> -->
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li> -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Passionate about crafting elegant solutions that make a real impact on end users. 
+            With a knack for turning complex problems into elegant, sustainable solutions through data science, I transform raw data into strategic, actionable insights.
+          </p>
+
+          <p>
+            Beyond the data realm, my entrepreneurial spirit drives me to envision a future where daily tasks are redefined, 
+            enabling people to focus on what truly matters. My ultimate goal is to integrate AI, Cognitive Science, and Robotics 
+            to create transformative solutions.
+          </p>
+
+          <p>
+            I am committed to harnessing data and technology for an innovative and meaningful tomorrow.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <h4 class="h4 service-title">Professionally</h4>
+
+          <ul class="service-list">
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/anomaly.svg" alt="anomaly icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>Anomaly Detection</h4>
+
+                <div class="service-item-text" data-testimonials-text>
+                  <p>
+                    Uncovering hidden patterns and ensuring operational reliability
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Specialized in the domain of Fraud Detection, applied various models such as GBT, XGBoost, TabNet, DevNet and ConNet to identify abusive data points. 
+                    In addition to models, built multiple rule-based pipelines to catch fixed fraud patterns which were identified through EDA. 
+
+                    <br><br>
+                   Also, worked on group frauds identification by leveraging graph theory. Modelled the entities in a graph, connected them with various KPIs and applied both community detection algorithms and models such as Louvain Algorithm, Leiden Algorithm, PSO optimization, Graph Convolution Network and Deep Modularity Network.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/customers-svgrepo-com.png" alt="customer icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>Propensity Modelling</h4>
+
+                <div class="service-item-text" data-testimonials-text>
+                  <p>
+                    Predicting customer behavior and driving strategic decisions
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Dived deep into predicting the value of a new user on a platform, experimented with various custom-built neural network architectures such as MLP, SIMO & MIMO with modified loss functions.
+                    Also, applied various tree-based models built in tensorflow by leveraging TF-DF module. 
+                    
+                    <br><br>
+                    Have built both classification models and regression models in which customers' risk score and lifetime value are predicted respectively. 
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/location-svgrepo-com.png" alt="location icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>Location Intelligence</h4>
+
+                <div class="service-item-text"  data-testimonials-text>
+                  <p>
+                    Transforming geospatial data into actionable insights
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Leveraged the GPS pings data to generate suggestions & rectify the incorrectly logged locations in the system. Designed an automated pipeline to regularly look for incorrect locations, generate suggestions and rectify. Explored multiple methods to generate suggestions such as Geometric Median, Clustering, Outlier Filtering, etc. 
+
+                    <br><br>
+                    Also, worked on the Facility Location Identification and Demand Estimation where in post predicting the demand heatmap in a city, determine the optimal locations for the facility to cater the maximum demand and ensure profitability. Applied various constraints and optimizations from Linear Programming using the tools like Gurobi & Pulp.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/content.svg" alt="content icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>Generative AI</h4>
+
+                <div class="service-item-text"  data-testimonials-text>
+                  <p>
+                    Revolutionizing content creation and transforming ideas into reality
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Worked on an image inpainting pipeline which beautifies the dish images using stable diffusion and also adds text & gradient overlays. 
+                    Utilized the ControlNet and CLIP Segmentation models from diffusers and transformers packages for inpainting. 
+
+                    <br><br>
+                    Contributed to a in-house Text2SQL pipeline which is a multi-stage RAG pipeline, building context at each stage as its get fed more metadata and narrows down to the specific columns and tables required to generate the query.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/opex.svg" alt="opex icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>Operational Excellence</h4>
+
+                <div class="service-item-text"  data-testimonials-text>
+                  <p>
+                    Driving optimizations and efficiency through data-driven strategies
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Implemented various optimizations in terms of storage and compute capacity, saving thousands of dollars per month in tech cost. 
+                    Understood the in-depth workings of Redis, DynamoDB, Kafka and Yack to identify the optimization opportunities.
+
+                    <br><br>
+                    Moreover, have designed & implemented various automations to reduce the human dependency and enable self-serve capability to the pipelines. Leveraged the APIs of Databricks, GSuite, GCP, AWS and Slack.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/analysis.png" alt="analysis icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>Data Analysis</h4>
+
+                <div class="service-item-text"  data-testimonials-text>
+                  <p>
+                    Unlocking the potential of data with precise and insightful analysis
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Have performed varied analysis ranging from Exploratory Data Analysis (EDA) to Total Addressable Market (TAM) Sizing. 
+                    This helps us guage the insights & actions from the data and its impact.
+
+                    <br><br>
+                    Given the experience in Anomaly Detection, Anecdotal Analysis and Root Cause Analysis are also part of my prominent skills. 
+                    This helps us in explaining why a model or rule behaved like that in a particular case and also, reach an unbiased conclusion of what should have actually happened.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <h4 class="h4 service-title" style="padding-top: 35px;">Personally</h4>
+
+          <ul class="service-list">
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icona-app.svg
+                " alt="design icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>SaaS Applications</h4>
+
+                <div class="service-item-text"  data-testimonials-text>
+                  <p>
+                    Building innovative and robust SaaS platforms
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    I keep looking for the pain points in day-to-day life which can be easily solved with a tech platform and try my best to make it a reality. Few of the platforms I have built in past are 
+
+                    <br><br>
+                    Bolt - AI infused swing trading platform which takes charge of the entire trading process, from strategically selecting stocks to optimal investment allocation and timely executions on the exchange.
+                    <br><br>
+                    inDex - an open data community platform where researchers, organizations, contributors, consumers, etc can come together and help each other in piling up non existing datasets for crafting new revolutionary products.
+                    <br><br>
+                    PixelRides - a cab booking platform with bargaining capability enabled for customers & drivers to reach a satisfactory price before booking the ride.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-bullish.svg
+                " alt="design icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>Trading & Investment</h4>
+
+                <div class="service-item-text"  data-testimonials-text>
+                  <p>
+                    Crafting efficient strategies for dynamic market conditions
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Always on hunt to identify and design an even-more accurate strategy which can shortlist potential stocks and provide precise entry & exit points. 
+
+                    <br><br>
+                    Play around with a heirarichal structure of strategies from a longer time frame to the shortest time frame, like a waterfall model which can filter for only the strong choices at the end.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/reading.svg
+                " alt="design icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>Reading</h4>
+
+                <div class="service-item-text"  data-testimonials-text>
+                  <p>
+                    Constantly expanding my knowledge from articles, blogs, and books
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    I like to keep myself updated with the latest things happening around me, I try to get my quick bites from articles and blogs. And when I want to learn something new or bigger, I take up books or courses.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-testimonials-item>
+
+              <h6 hidden data-testimonials-date></h6>
+
+              <div class="service-icon-box">
+                <img src="./assets/images/gaming.svg
+                " alt="design icon" width="40" data-testimonials-avatar>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-testimonials-title>Retro Gaming & Shows</h4>
+
+                <div class="service-item-text"  data-testimonials-text>
+                  <p>
+                    Exploring the charm and nostalgia to spark creativity and relaxation
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Tekken-3, Mario, Sonic, Contra and Adventure Island are some of my favourite retro games.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Pradeep Janardhanan" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Pradeep Janardhanan <span style="font-size:small;">CEO @Vsualthree60</span></h4>
+
+                <h6 hidden data-testimonials-date>5 Aug 2020</h6>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  
+                  <p>
+                    Masihullah is reliable, dedicated and eternally upbeat. Masihullah multitasks
+                    effectively and is able to handle a high-volume workload. He consistently met
+                    and surpassed all our expectations on delivering gold standard technology
+                    solutions. Masihullah's has a team player mind-set, enthusiastic embrace of
+                    change, ability to work with minimal supervision and unwavering commitment
+                    to exceed expectations.
+
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Organized and diligent, Masihullah quickly learned technology systems and
+                    software that were unfamiliar to him when he first started with Vsualthree60.
+                    Masihullah is a hardworking, top-performing professional and has my highest
+                    recommendation.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Meghana Negi" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Meghana Negi <span style="font-size:small;">Senior Manager DS @Swiggy</span></h4>
+
+                <h6 hidden data-testimonials-date>5 Aug 2020</h6>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ipsum alias earum laborum veritatis maxime eveniet delectus perferendis hic deserunt modi, vitae quas doloribus. Dicta voluptatibus et voluptate eos minima.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Akash Deep" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Akash Deep <span style="font-size:small;">MLE III @Nykaa</span></h4>
+
+                <h6 hidden data-testimonials-date>5 Aug 2020</h6>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat voluptatem neque perferendis dignissimos, pariatur vitae ullam illo, tenetur rerum officia dolorum sequi itaque aut at veniam ipsam dolorem. Vero, quae.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Pradeep Janardhanan" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Pradeep Janardhanan</h4>
+
+              <time data-modal-date>14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Worked at</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.swiggy.com/" target="_blank">
+                <img src="./assets/images/swiggy.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.ibm.com/in-en" target="_blank">
+                <img src="./assets/images/ibm.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://vsualthree60.com/" target="_blank">
+                <img src="./assets/images/vsualthree60.png" alt="client logo">
+              </a>
+            </li>
+
+            <!-- <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li> -->
+
+            <!-- <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume <a href="./Masihullah_Resume_DS.pdf" class="h3" style="display: inline; color: var(--vegas-gold)">[PDF]</a></h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Indian Institute of Information Technology Sri City, India</h4>
+
+              <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                BTech (Honors) in Computer Science and Engineering
+                <br>
+                CGPA - 9.41 / 10
+                <br><br>
+                <span style="font-weight: 700;">Honors Research (2020-2022): </span>
+                <span style="font: inherit; color: white; font-weight: 400;">Title : Exploring Collaborative Strategies for PTZ Cameras Network</span>
+              </p>
+
+              <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer;" onclick="toggle_exp('honors_exp', 'details_honors')" id="details_honors">Show Details >>></h4>
+
+              <ul class="timeline-text" style="padding-left: 20px; padding-top: 10px;" id="honors_exp">
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  Created real-world traffic simulations using Agent-based Modelling and studied various collaborative strategies for an array of PTZ traffic cameras. The cameras communicate with each other by learning a graph to improve the effectiveness of target tracking.
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray);">
+                  <span style="display: inline;">Publication : </span> Masihullah S, and Subu K. "<span style="font: inherit; color: inherit; display: inline; font-weight: 500;">A Decentralized Collaborative Strategy for PTZ Camera Network Tracking System using Graph Learning.</span>" Published in AMMS 2022, Paris, France.
+                </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    
-    <div id="colorlib-page">
-      <header>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="colorlib-navbar-brand">
-                <a class="colorlib-logo" href="index.html"><span class="logo-img" style="background-image: url(images/person_1.jpg);"></span>Shaik Masihullah</a>
-              </div>
-              <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-            </div>
-          </div>
-        </div>
-      </header>
-    
-      <section class="home-slider owl-carousel js-fullheight">
-        <div class="slider-item js-fullheight">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
-              <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <p><a href="#" class="scroll">Hi! I'm</a></p>
-                <h1 class="mb-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Shaik Masihullah</h1>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="slider-item js-fullheight">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
-              <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <p><a href="#" class="scroll">I'm from Proddatur</a></p>
-                <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">An AI Roboticist</h1>
-                <p><a href="#" class="scroll">Enthusiast</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- END slider -->
+            </li>
 
-      <section class="ftco-section about-section">
-        <div class="container">
-          <div class="row d-flex" data-scrollax-parent="true">
-            <div class="col-md-4 author-img" style="background-image: url(images/person_2.jpg);" data-scrollax=" properties: { translateY: '-70%'}"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-6 wrap ftco-animate">
-              <div class="about-desc">
-                <h1 class="bold-text">About</h1>
-              </div>
-                <div class="p-5">
-                  <h2 class="mb-5">Hi! I'm Shaik Masihullah</h2>
-                  <p>"Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover." ~Mark Twain</p>
-                  <a href="about.html">-> Checkout my resume</a>
-                  <ul class="ftco-footer-social list-unstyled mt-4">
-                    <li><a href="https://in.linkedin.com/in/shaik-masihullah"><span class="icon-linkedin"></span></a></li>
-                    <li><a href="https://github.com/Masihullah17"><span class="icon-github"></span></a></li>
-                    <!--<li><a href="#"><span class="icon-instagram"></span></a></li>-->
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Scientist II @Swiggy</h4>
+
+              <span>Oct 2023 — Present</span>
+
+              <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer;" onclick="toggle_exp('ds2_exp', 'details_ds2')" id="details_ds2">Show Details >>></h4>
+
+              <ul class="timeline-text" style="padding-left: 20px; padding-top: 10px;" id="ds2_exp">
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  <span style="display: inline; font-weight: 700;">Customer Lifetime Value: </span> Formulated a predictive unified customer score based on user attributes and
+                  behavior to estimate both lifetime value and potential risk. Trained a multi-output neural network to rank 5M
+                  new users with minimal order data, addressing information sparsity and cold start issues. Analyzed 15+ model
+                  and business metrics such as MAE, NDCG, Spearman R, Repeat Rate, Average Order Value, etc.
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  <span style="display: inline; font-weight: 700;">Text-to-SQL using Gen AI: </span> Contributed to an in-house RAG-based Text-to-SQL workflow enabling users to
+                  ask questions in natural language and receive SQL queries, used by 1,000+ employees. Performed related-work
+                  industry analysis, anecdotal analysis and proposed new layers in the workflow to improve the accuracy.
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  <span style="display: inline; font-weight: 700;">Restaurant Location Correction: </span> Designed and implemented a framework to rectify incorrectly logged
+                  restaurant locations using delivery partners' historical GPS data and the Geometric Median technique. Achieved
+                  92% accuracy, correcting over 13K locations and improving delivery efficiency for thousands of daily orders.
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray);">
+                  <span style="display: inline; font-weight: 700;">Facility Location Network Optimization: </span> Developing a pipeline to generate an optimal dark store network
+                  for Swiggy Instamart using Linear Programming with constraints like facility count, serviceability, demand
+                  satisfaction, etc. Also estimating operational metrics such as order count, delivery time, revenue, and profit.
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Scientist I @Swiggy</h4>
+
+              <span>Jun 2022 — Sep 2023</span>
+
+              <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer;" onclick="toggle_exp('ds1_exp', 'details_ds1')" id="details_ds1">Show Details >>></h4>
+
+              <ul class="timeline-text" style="padding-left: 20px; padding-top: 10px;" id="ds1_exp">
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  <span style="display: inline; font-weight: 700;">Fraud Rings Detection: </span> Expanded on the intern work to implement community-based group fraud detection pipelines in production. Constructed graphs with 4M nodes and 3M edges, incorporating various node and edge types with parameterized rules tuning and edge case handling, achieving over 90% precision.
+                </li>
+                
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray);">
+                  <span style="display: inline; font-weight: 700;">Refund Fraud Detection: </span> Developed an anomaly detection pipeline using ensemble of TabNet and DevNet models to identify fraudsters. Handled limited labeled data (5%) and class imbalance (10% positives) with weak and semi-supervised methods. Engineered over 250 features to detect 70+ fraud patterns with 85% precision.
+
+                  <ul class="timeline-text" style="padding-left: 40px; padding-top: 5px;">
+                    <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                      <span style="display: inline;">Publication : </span> Piyush N, Rutvik V, Masihullah S, Meghana N, & Jose M. "<span style="font: inherit; color: inherit; display: inline; font-weight: 500;">Utilizing DevNet with Variational Loss for Fraud Detection in Hyperlocal Food Delivery.</span>" Published in CODS-COMAD 2024, Bangalore, India.
+                    </li>
                   </ul>
-                  <h5>Contact me here!</h5>
-                  <p>Email: <a href="#">masihulla17@gmail.com</a></p>
-                  <p>Linkedin: <a href="https://in.linkedin.com/in/shaik-masihullah">shaik-masihullah</p>
+
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  <span style="display: inline; font-weight: 700;">Menu Enhancement: </span> Given a dish name, predict whether its veg or non-veg, and recommend a dish category.
+                  Built multi-head attention neural network, N-grams and Word2Vec models, achieving 96% precision & reducing
+                  manual correction tickets by 75% (9K per day).
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  <span style="display: inline; font-weight: 700;">New User Churn Prediction: </span> Engineered 130+ features for new users with limited historical data while developing and iterating churn prediction models, including GBT, AE anomaly detection, tree models in TF-DF, and their ensembles. Accomplished over 90% precision, 1K new orders and 33% increase in COD availability for Swiggy Instamart.
+                </li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Science Intern @Swiggy</h4>
+
+              <span>Jun 2021 — Jan 2022</span>
+
+              <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer;" onclick="toggle_exp('ds_intern_exp', 'details_ds_intern')" id="details_ds_intern">Show Details >>></h4>
+
+              <ul class="timeline-text" style="padding-left: 20px; padding-top: 10px;" id="ds_intern_exp">
+                <li style="list-style: disc; font: inherit; color: var(--light-gray);">
+                  <span style="display: inline; font-weight: 700;"> Fraud Rings Detection: </span> Designed a graph-based anomaly detection framework using the Leiden community
+                  detection algorithm, enabling real-time identification of fraud groups without relying on GNNs. Improved F1
+                  score by 9.92% compared to existing SOTA approaches in anomaly detection.
+
+                  <ul class="timeline-text" style="padding-left: 40px; padding-top: 5px;">
+                    <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                      <span style="display: inline;">Publication : </span> Masihullah S, Meghana N, Jose M, & Jairaj S. "<span style="font: inherit; color: inherit; display: inline; font-weight: 500;">Identifying Fraud Rings Using Domain Aware Weighted Community Detection.</span>" Published in CD-MAKE 2022, Vienna, Austria.
+                    </li>
+                  </ul>
+
+                </li>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">GRM Research Intern @IBM</h4>
+
+              <span>Jan 2020 — Jun 2020</span>
+
+              <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer;" onclick="toggle_exp('ibm_intern_exp', 'details_ibm_intern')" id="details_ibm_intern">Show Details >>></h4>
+
+              <ul class="timeline-text" style="padding-left: 20px; padding-top: 10px;" id="ibm_intern_exp">
+                <li style="list-style: disc; font: inherit; color: var(--light-gray);">
+                  <span style="display: inline; font-weight: 700;"> Road and Pothole Segmentation: </span> Integrated Attention-based Refinement and Feature Fusion modules into
+                  the DeepLabV3+ architecture to enhance spatial representation and global context. Achieved a mIoU of 93.6%
+                  for road and 73.83% for pothole segmentation, with an 81% reduction in run-time.
+
+                  <ul class="timeline-text" style="padding-left: 40px; padding-top: 5px;">
+                    <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                      <span style="display: inline;">Publication : </span> Masihullah S, Ritu G, Prerana M, Anupama R. "<span style="font: inherit; color: inherit; display: inline; font-weight: 500;">Attention Based Coupled Framework for Road and Pothole Segmentation.</span>" Published in ICPR 2020, Milan, Italy.
+                    </li>
+                  </ul>
+
+                </li>
+  
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning Intern @Vsualthree60</h4>
+
+              <span>Jul 2019 — Jan 2021</span>
+
+              <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer;" onclick="toggle_exp('ml_intern_exp', 'details_ml_intern')" id="details_ml_intern">Show Details >>></h4>
+
+              <ul class="timeline-text" style="padding-left: 20px; padding-top: 10px;" id="ml_intern_exp">
+                <li style="list-style: disc; font: inherit; color: var(--light-gray);">
+                  <span style="display: inline; font-weight: 700;"> AI SaaS Platforms: </span> Developed platforms for Crowd Surveillance, Image Docs Parsing, Appointments Chatbot,
+                  and Virtual Clothing Try-On. Used deep learning models like VGG-Face, YOLO, Tesseract, OpenCV, and Rasa
+                  for age, gender, and ethnicity prediction, text detection in Arabic and English, and image/text processing.
+                </li>
+              </ul>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper h5">
+                <span>Programming Languages: </span> <span style="font-weight: var(--fw-300); color: white;"> Python, SQL, Bash, JavaScript, HTML, CSS, Java, C, Dart, Julia</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="ftco-section">
-        <div class="container">
-          <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-              <span>What i do</span>
-              <h2>My Top Skills</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-              <div class="media block-6 services p-3 py-4 d-block text-center">
-                <div class="icon mb-3"><span class="icon-layers"></span></div>
-                <div class="media-body">
-                  <h3 class="heading">Deep Learning</h3>
-                  <h3 class="heading">Computer Vision</h3>
-                  <h3 class="heading">Natural Language Processing</h3>
-                </div>
-              </div>      
-            </div>
-            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-              <div class="media block-6 services p-3 py-4 d-block text-center">
-                <div class="icon mb-3"><span class="icon-code"></span></div>
-                <div class="media-body">
-                  <h3 class="heading">Flutter</h3>
-                  <h3 class="heading">WebApp Development</h3>
-                  <h3 class="heading">RestAPIs</h3>
-                </div>
-              </div>      
-            </div>
-            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-              <div class="media block-6 services p-3 py-4 d-block text-center">
-                <div class="icon mb-3"><span class="icon-gears"></span></div>
-                <div class="media-body">
-                  <h3 class="heading">Agent Based Modelling</h3>
-                  <h3 class="heading">Robot Operating System(ROS)</h3>
-                  <h3 class="heading">Python</h3>
-                </div>
-              </div>    
-            </div>
-          </div>
-        </div>
-      </section>
+            </li>
 
-      <section class="ftco-section">
-        <div class="container">
-          <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-              <span>Portfolio</span>
-              <h2>Checkout a few of my works</h2>
-            </div>
-          </div>
-          <div class="row no-gutters">
-          
+            <li class="skills-item">
 
-            <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="#" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/chatbot.png'); " data-scrollax=" properties: { translateY: '-30%'}">
-                <div class="icon d-flex text-center justify-content-center align-items-center">
-                  <span class="icon-search"></span>
+              <div class="title-wrapper h5">
+                <span>DS Tools: </span> <span style="font-weight: var(--fw-300); color: white;"> Tensorflow, Keras, Pytorch, OpenCV, Sklearn, Numpy, Pandas, PySpark</span>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper h5">
+                <span>Ops Tools: </span> <span style="font-weight: var(--fw-300); color: white;"> Databricks, Snowflake, Kafka, AWS, GCP, Git</span>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper h5">
+                <span>Others: </span> <span style="font-weight: var(--fw-300); color: white;"> Django, Flask, Flutter, Robot Operating System</span>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://dl.acm.org/doi/10.1145/3632410.3632460" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/devnet.jpg" alt="DevNet" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Fraud Detection</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jan 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Utilizing DevNet with Variational Loss for Fraud Detection in Hyperlocal Food Delivery</h3>
+
+                  <p class="blog-text">
+                    International Conference on Data Sciences and Management of Data (CODS-COMAD 2024) - Bangalore, India
+                  </p>
+
                 </div>
+
               </a>
-              <div class="text order-1">
-                <h4 class="subheading">Emotional Bot (Currently Ongoing)</h4>
-                <h2 class="heading"><a href="#">Chatbot with emotions</a></h2>
-                <p>Making a chatbot that replicates different emotions of humans in chatting.</p>
-                <!--<p><a href="#">View Project</a></p>-->
-              </div>
-            </div>
+            </li>
 
-            <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="https://github.com/Masihullah17/emojination" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/bodi.png'); " data-scrollax=" properties: { translateY: '-30%'}">
-                <div class="icon d-flex text-center justify-content-center align-items-center">
-                  <span class="icon-search"></span>
+            <li class="blog-post-item">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-14463-9_10" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/graph.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Fraud Detection</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Aug 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Identifying Fraud Rings Using Domain Aware Weighted Community Detection</h3>
+
+                  <p class="blog-text">
+                    Cross Domain Conference for Machine Learning and Knowledge Extraction (CD-MAKE) 2022 - Vienna, Austria
+                  </p>
+
                 </div>
+
               </a>
-              <div class="text">
-                <h4 class="subheading">Human Body Parts Detection</h4>
-                <h2 class="heading"><a href="https://github.com/Masihullah17/HumanBodyPartsDetection">Detecting the human body parts</a></h2>
-                <p>Predicting the body parts like hands, legs, eyes, ear, etc using keras, VGG19 & opencv</p>
-                <p><a href="https://github.com/Masihullah17/HumanBodyPartsDetection">View Project</a></p>
-              </div>
-            </div>
+            </li>
 
+            <li class="blog-post-item">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3545839.3545849" target="_blank">
 
-            <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="https://github.com/Masihullah17/emojination" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/Happy.png'); " data-scrollax=" properties: { translateY: '-30%'}">
-                <div class="icon d-flex text-center justify-content-center align-items-center">
-                  <span class="icon-search"></span>
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/agents.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Operations Research</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jun 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">A Decentralized Collaborative Strategy for PTZ Camera Network Tracking System using Graph Learning</h3>
+
+                  <p class="blog-text">
+                    2022 4th International Applied Mathematics, Modelling and Simulation Conference (AMMS 2022) - Paris, France
+                  </p>
+
                 </div>
+
               </a>
-              <div class="text order-1">
-                <h4 class="subheading">Emojination</h4>
-                <h2 class="heading"><a href="https://github.com/Masihullah17/emojination">Detecting the emotions in real time</a></h2>
-                <p>Detecting the emotions in human faces and converting them into emojis using keras, tensorflow & opencv</p>
-                <p><a href="https://github.com/Masihullah17/emojination">View Project</a></p>
-              </div>
-            </div>
-            
-            <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="https://github.com/Masihullah17/movieGenre" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/avengers.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-                <div class="icon d-flex text-center justify-content-center align-items-center">
-                  <span class="icon-search"></span>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://ieeexplore.ieee.org/document/9412368" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/segment.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Computer Vision</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jan 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Attention Based Coupled Framework for Road and Pothole Segmentation</h3>
+
+                  <p class="blog-text">
+                    International Conference on Pattern Recognition (ICPR 2020) - Milan, Italy
+                  </p>
+
                 </div>
+
               </a>
-              <div class="text">
-                <h4 class="subheading">Movie Genre</h4>
-                <h2 class="heading"><a href="https://github.com/Masihullah17/movieGenre">Predicitng the Movie Genre </a></h2>
-                <p>Using the poster of the movie for predicting the movie genre.               </p>
-                <p><a href="https://github.com/Masihullah17/movieGenre">View Project</a></p>
-              </div>
-            </div>
+            </li>
 
-            <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="https://github.com/Masihullah17/Abhisarga-AR-Viewer" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/abhisargalogo.png'); " data-scrollax=" properties: { translateY: '-30%'}">
-                <div class="icon d-flex text-center justify-content-center align-items-center">
-                  <span class="icon-search"></span>
-                </div>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Recognitions</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Personal Projects</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Blogs</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Certifications</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Recognitions</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Personal Projects</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Blogs</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Certifications</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Recognitions">
+              <a href="./assets/images/mvp-3.png" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mvp-3.png" alt="MVP" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Most Valued Player - Three times</h3>
+
+                <p class="project-category">Recognitions</p>
+
               </a>
-              <div class="text order-1">
-                <h4 class="subheading">Abhisarga AR Viewer</h4>
-                <h2 class="heading"><a href="https://github.com/Masihullah17/Abhisarga-AR-Viewer">Augmented Reality app</a></h2>
-                <p>On the eve of exiting annual cultural fest of IIIT Sricity, we made an Augmented Reality app that consists of all kinds of games, with lots of AR experience.</p>
-                <p><a href="https://github.com/Masihullah17/Abhisarga-AR-Viewer">View Project</a></p>
-              </div>
-            </div>
+            </li>
 
-            <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="https://github.com/Masihullah17/Pruning-Large-Neural-Network" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/pruning.png'); " data-scrollax=" properties: { translateY: '-30%'}">
-                <div class="icon d-flex text-center justify-content-center align-items-center">
-                  <span class="icon-search"></span>
-                </div>
+            <li class="project-item  active" data-filter-item data-category="Recognitions">
+              <a href="./assets/images/promo.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/promo.jpg" alt="promo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DS-II Promotion @Swiggy</h3>
+
+                <p class="project-category">Recognitions</p>
+
               </a>
-              <div class="text ">
-                <h4 class="subheading">Pruning Neural Network</h4>
-                <h2 class="heading"><a href="https://github.com/Masihullah17/Pruning-Large-Neural-Network">Sparsing a Neural Network</a></h2>
-                <p>Training a very large neural network and then making it small so as to improve it's performance by pruning it's weights and neurons.</p>
-                <p><a href="https://github.com/Masihullah17/Pruning-Large-Neural-Network">View Project</a></p>
-              </div>
-            </div>
+            </li>
+<!-- 
+            <li class="project-item  active" data-filter-item data-category="Recognitions">
+              <a href="./assets/images/mvp-2.png" target="_blank">
 
-            
-            <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="blog.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/funny.png'); " data-scrollax=" properties: { translateY: '-30%'}">
-                <div class="icon d-flex text-center justify-content-center align-items-center">
-                  <span class="icon-search"></span>
-                </div>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mvp-2.png" alt="MVP" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Most Valued Player - Twice</h3>
+
+                <p class="project-category">Recognitions</p>
+
               </a>
-              <div class="text order-1">
-                <h4 class="subheading">Fun Stuff</h4>
-                <h2 class="heading"><a href="blog.html">Fun while learning </a></h2>
-                <p>This contains some of the fun things and projects I did while learning the cool things.</p>
-                <p><a href="blog.html">View Projects</a></p>
-              </div>
-            </div>
-     <!--
-            <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="portfolio-single.html" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/work-5.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-                <div class="icon d-flex text-center justify-content-center align-items-center">
-                  <span class="icon-search"></span>
-                </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Recognitions">
+              <a href="./assets/images/mvp-1.png" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mvp-1.png" alt="MVP" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Most Valued Player - Once</h3>
+
+                <p class="project-category">Recognitions</p>
+
               </a>
-              <div class="text">
-                <h4 class="subheading">Animation</h4>
-                <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-                <p><a href="#">View Project</a></p>
-              </div>
-            </div>
-            <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-              <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/work-6.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-                <div class="icon d-flex text-center justify-content-center align-items-center">
-                  <span class="icon-search"></span>
-                </div>
+            </li> -->
+
+            <li class="project-item  active" data-filter-item data-category="Recognitions">
+              <a href="./assets/images/swiggstar-1.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/swiggstar-1.jpg" alt="swiggstar" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Swiggstar - Never Settle</h3>
+
+                <p class="project-category">Recognitions</p>
+
               </a>
-              <div class="text order-1">
-                <h4 class="subheading">Branding</h4>
-                <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-                <p><a href="#">View Project</a></p>
-              </div>
-            -->
-           
-          </div>
-          <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-              <span>Wanna see more!</span>
-              <h2>Checkout my <a href="https://github.com/Masihullah17">Github</a> profile.</h2>
-            </div>
-          </div>
+            </li>
 
-<!--          <div class="row mt-5">
-            <div class="col text-center">
-              <div class="block-27">
-                <ul>
-                  <li><a href="#">&lt;</a></li>
-                  <li class="active"><span>1</span></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">&gt;</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>-->
-        </div>
-      </section>
+            <li class="project-item  active" data-filter-item data-category="Recognitions">
+              <a href="./assets/images/vsualthree60_reco.jpg" target="_blank">
 
-      <section class="ftco-section ftco-counter" id="section-counter">
-        <div class="container">
-          <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-              <span>Portfolio</span>
-              <h2>I love to share my achievements</h2>
-              <span>Hit the number!</span>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-start">
-            <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <span class="ftco-label">Projects Done</span>
-                  <a href="https://github.com/Masihullah17"><strong class="number" data-number="25">0</strong></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <span class="ftco-label">Certifications</span>
-                  <a href="certificates.html"><strong class="number" data-number="10">0</strong></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-end">
-            <div class="col-md-5 counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <span class="ftco-label">No of Views</span>
-                  <strong class="number1" data-number="222">0</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <footer class="ftco-footer ftco-bg-dark ftco-section">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <div class="col-md-5 text-center">
-              <div class="ftco-footer-widget mb-5">
-                <ul class="ftco-footer-social list-unstyled">
-                  <li class="ftco-animate"><a href="https://github.com/Masihullah17"><span class="icon-github"></span></a></li>
-                  <li class="ftco-animate"><a href="https://in.linkedin.com/in/shaik-masihullah"><span class="icon-linkedin"></span></a></li>
-                  <!--<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>-->
-                </ul>
-              </div>
-              <div class="ftco-footer-widget">
-                <h2 class="mb-3">Contact Me</h2>
-                <p class="h3 email"><a href="#">masihulla17@gmail.com</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      with <i class="icon-heart" aria-hidden="true" style="color: red;"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-          </div>
-        </div>
-      </footer>
+                  <img src="./assets/images/vsualthree60_reco.jpg" alt="vsualthree60" loading="lazy">
+                </figure>
 
-      <!-- loader -->
-      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+                <h3 class="project-title">LOR - Vsualthree60 </h3>
 
-      </div>
+                <p class="project-category">Recognitions</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Personal Projects">
+              <a href="./assets/images/bolt.png" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/bolt.png" alt="bolt" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Bolt - AI-infused Swing Trading Platform</h3>
+
+                <p class="project-category">Personal Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Personal Projects">
+              <a href="./assets/images/bolt-bot.png" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/bolt-bot.png" alt="bolt bot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Bolt Telegram Bot for Realtime Querying & Alerts</h3>
+
+                <p class="project-category">Personal Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Personal Projects">
+              <a href="./assets/images/index_app.png" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/index_app.png" alt="inDex" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="text-transform: none;">inDex - open data community platform </h3>
+
+                <p class="project-category">Personal Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Personal Projects">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/search-engine.png" alt="local search engine" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Local Search Engine - Cache daily surfed websites locally and search content instead of just URL</h3>
+
+                <p class="project-category">Personal Projects</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Personal Projects">
+              <a href="https://github.com/Masihullah17/Pruning-Large-Neural-Network" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pruning.jpg" alt="pruning nn" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pruning a Neural Network</h3>
+
+                <p class="project-category">Personal Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Personal Projects">
+              <a href="https://shaikmasihullah.github.io/projects/FindingWaldo.html" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/waldo.jpg" alt="finding waldo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finding Waldo - Identifying a small piece of image in the big picture.</h3>
+
+                <p class="project-category">Personal Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Personal Projects">
+              <a href="https://shaikmasihullah.github.io/projects/C&PDetection.html" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/car.jpg" alt="car detection" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Car & Pedestrain Detection in the video.</h3>
+
+                <p class="project-category">Personal Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Blogs">
+              <a href="https://bytes.swiggy.com/utilizing-devnet-with-variational-loss-for-fraud-detection-in-hyperlocal-food-delivery-19e72999acfb" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/devnet.jpg" alt="devnet" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DevNet Model with Variational Loss</h3>
+
+                <p class="project-category">Blogs</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Blogs">
+              <a href="https://bytes.swiggy.com/identifying-fraud-rings-using-domain-aware-weighted-community-detection-6a14c27c43e0" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/graph.jpg" alt="devnet" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fraud Rings Detection</h3>
+
+                <p class="project-category">Blogs</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Certifications">
+              <a href="./assets/images/ibm_grm.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ibm_grm.jpg" alt="ibm grm" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IBM GRM Research Program Participation</h3>
+
+                <p class="project-category">Certifications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Certifications">
+              <a href="./assets/images/chatbot.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/chatbot.jpg" alt="chatbot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Deep Learning and Natural Language Processing</h3>
+
+                <p class="project-category">Certifications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Certifications">
+              <a href="./assets/images/tensorflow.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tensorflow.jpg" alt="tensorflow" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Intro to Tensorflow</h3>
+
+                <p class="project-category">Certifications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Certifications">
+              <a href="./assets/images/ibm.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ibm.jpg" alt="sql" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Databases & SQL</h3>
+
+                <p class="project-category">Certifications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Certifications">
+              <a href="./assets/images/ml_u.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ml_u.jpg" alt="ml" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Machine Learning Hands-On</h3>
+
+                <p class="project-category">Certifications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Certifications">
+              <a href="./assets/images/ml_c.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ml_c.jpg" alt="ml andrew ng" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Machine Learning</h3>
+
+                <p class="project-category">Certifications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Certifications">
+              <a href="./assets/images/eh_u.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/eh_u.jpg" alt="ethical hacking" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ethical Hacking and Network</h3>
+
+                <p class="project-category">Certifications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Certifications">
+              <a href="./assets/images/skyfi.jpg" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/skyfi.jpg" alt="skyfi" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Quadcopter Workshop</h3>
+
+                <p class="project-category">Certifications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Certifications">
+              <a href="./assets/images/rc_car.png" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/rc_car.png" alt="rc car" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RC Car Competition Event Organizer</h3>
+
+                <p class="project-category">Certifications</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
     </div>
 
+  </main>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/topbtn.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.timepicker.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/main.js"></script>
-    
-  </body>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    $('#ds2_exp').hide();
+    $('#ds1_exp').hide();
+    $('#ds_intern_exp').hide();
+    $('#ibm_intern_exp').hide();
+    $('#ml_intern_exp').hide();
+    $('#honors_exp').hide();
+  </script>
+
+</body>
+
 </html>

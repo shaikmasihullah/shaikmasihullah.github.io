@@ -159,3 +159,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function toggle_exp(elem_id, text_id) {
+  $('#'+elem_id).is(":visible") ? $('#'+elem_id).hide() : $('#'+elem_id).show();
+  $('#'+elem_id).is(":visible") ? $('#'+text_id).text("Hide Details <<<") : $('#'+text_id).text("Show Details >>>");
+} 

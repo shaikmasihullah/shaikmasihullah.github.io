@@ -563,6 +563,53 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar.png" alt="Jairaj Sathyanarayana" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  <div style="display: flex;">
+                    Jairaj Sathyanarayana 
+                    
+                    &nbsp;
+                    <a href="https://www.linkedin.com/in/jairajs/" class="social-link" target="_blank" style="all: unset; cursor: pointer;">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    
+                  </div>
+                  <span style="font-size:small;">Chief Data & AI Officer @Tata Digital</span></h4>
+
+                <h6 hidden data-testimonials-date>17th Nov 2024</h6>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  
+                  <p>
+                    Masih is one of the first crop of intern-turned-FTEs we hired from IIIT SriCity. 
+                    This group produced some of the best work and highest ROI for Swiggy Data Science 
+                    over the last 3-4 years. I have had the fortune of watching these folks blossom and 
+                    Masih was one of the clear stand-outs.
+
+                    <br>
+                  </p>
+
+                  <p>
+                    <br>
+                    Masih spikes on several dimensions-- he is a first-principles thinker who can methodically 
+                    unpack research papers/ problem statements and come up with intuitive and simple solutions, 
+                    he has a keen eye for data and can always counted on to cover all the bases in terms of 
+                    analyses and hypotheses, he is a full-stack ML engineer who is always thinking about 
+                    maintainability, paying down tech debt and keeping things simple, and probably the best 
+                    part-- he is a solid teamplayer and joy to work with, thrives on collaboration and is 
+                    generous with sharing his knowledge and lifting others.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
                   <img src="./assets/images/avatar-1.png" alt="Pradeep Janardhanan" width="60" data-testimonials-avatar>
                 </figure>
 
@@ -686,7 +733,7 @@
                     </a>
                     
                   </div>
-                  <span style="font-size:small;">DS III @Nykaa</span></h4>
+                  <span style="font-size:small;">ML III @Nykaa</span></h4>
 
                 <h6 hidden data-testimonials-date>5th Sep 2024</h6>
 
@@ -785,6 +832,11 @@
           <h3 class="h3 clients-title">Worked at</h3>
 
           <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="https://www.nykaa.com/" target="_blank">
+                <img src="./assets/images/nykaa.jpeg" alt="client logo">
+              </a>
+            </li>
 
             <li class="clients-item">
               <a href="https://www.swiggy.com/" target="_blank">
@@ -893,16 +945,42 @@
               <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Work Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">ML Scientist II @Nykaa</h4>
+
+              <span>Dec 2024 — Present</span>
+
+              <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer; color: var(--light-gray);" onclick="toggle_exp('ml2_exp', 'details_ml2')" id="details_ml2">Show Details >>></h4>
+
+              <ul class="timeline-text" style="padding-left: 20px; padding-top: 10px;" id="ml2_exp">
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  <span style="display: inline; font-weight: 700;">Ad-tech Intelligence: </span> Designed and developing an ad pacing system with varied budget distributions, optimizing budget utilization while dynamically adjusting for under/over-spending and the remaining campaign time.
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  <span style="display: inline; font-weight: 700;">CTR Correction: </span> Developed a statistical method to correct variance in the CTR prediction model for low impression products and also, enabled real-time adaptation to changing popularity trends.
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  <span style="display: inline; font-weight: 700;">ML Inference Engine: </span> Solutioning and development of ML Inference Engine Platform to deploy and serve DS models, with inherent feature fetch, pre & post processing and serving over an endpoint.
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">Data Scientist II @Swiggy</h4>
 
-              <span>Oct 2023 — Present</span>
+              <span>Oct 2023 — Dec 2024</span>
 
               <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer; color: var(--light-gray);" onclick="toggle_exp('ds2_exp', 'details_ds2')" id="details_ds2">Show Details >>></h4>
 
@@ -1040,6 +1118,69 @@
 
         </section>
 
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-working"></ion-icon>
+            </div>
+
+            <h3 class="h3">Personal Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">inWelth - Simplified Stock Reports</h4>
+
+              <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer; color: var(--light-gray);" onclick="toggle_exp('inwelth_exp', 'details_inwelth')" id="details_inwelth">Show Details >>></h4>
+
+              <ul class="timeline-text" style="padding-left: 20px; padding-top: 10px;" id="inwelth_exp">
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  An AI-driven platform that autonomously analyzes stock data and generates concise, jargon-free reports for investors. 
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  Developed the entire AI pipeline, integrating LLM agents, automated reasoning, NLP, and data processing. 
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  Future vision: Expanding to advanced financial insights, trend analysis, portfolio tracking, and broader asset classes (US Stocks, Crypto).
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  🚀 Check it out at <a href="https://inwelth.com" style="display: inline-flex; color: var(--light-gray); font-weight: 500; text-decoration: none;">inWelth.com</a> - your valuable feedback is always welcome!
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bolt - Autonomous Trading Platform</h4>
+
+              <h4 class="h4 timeline-item-title" style="padding-left: 20px; font-weight: 400;padding-top: 10px; cursor: pointer; color: var(--light-gray);" onclick="toggle_exp('bolt_exp', 'details_bolt')" id="details_bolt">Show Details >>></h4>
+
+              <ul class="timeline-text" style="padding-left: 20px; padding-top: 10px;" id="bolt_exp">
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  An AI-infused trading platform that takes charge of the entire trading process, from strategic selection of stocks to optimal investment allocation and timely execution of trades on the exchange. 
+                </li>
+
+                <li style="list-style: disc; font: inherit; color: var(--light-gray); padding-bottom: 10px;">
+                  It employs advanced algorithms to autonomously analyze fundamentals, technicals, sector trends, macro trends, news, sentiments, etc., to predict stock movements for both trading & investing.
+                </li>
+
+              </ul>
+
+            </li>
+
+          </ol>
+        </section>
+
         <section class="skill">
 
           <h3 class="h3 skills-title">Skills</h3>
@@ -1057,7 +1198,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper h5">
-                <span>DS Tools: </span> <span style="font-weight: var(--fw-300); color: white;"> Tensorflow, Keras, Pytorch, OpenCV, Sklearn, Numpy, Pandas, PySpark</span>
+                <span>DS Tools: </span> <span style="font-weight: var(--fw-300); color: white;"> LLM, RAG, AI Agents, Tensorflow, Keras, Pytorch, OpenCV, Sklearn, Numpy, Pandas, PySpark</span>
               </div>
 
             </li>
@@ -1294,6 +1435,24 @@
 
           <ul class="project-list">
 
+            <li class="project-item  active" data-filter-item data-category="Personal Projects">
+              <a href="https://inwelth.com" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/inwelth.png" alt="inwelth" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">inWelth - Simplified Stock Reports</h3>
+
+                <p class="project-category">Personal Projects</p>
+
+              </a>
+            </li>
+
             <li class="project-item  active" data-filter-item data-category="Certifications">
               <a href="https://learn.deeplearning.ai/accomplishments/b83e4963-3f1e-4166-90fb-6015e941e14a?usp=sharing" target="_blank">
 
@@ -1449,7 +1608,7 @@
                   <img src="./assets/images/bolt.png" alt="bolt" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Bolt - AI-infused Swing Trading Platform</h3>
+                <h3 class="project-title">Bolt - Autonomous Trading Platform</h3>
 
                 <p class="project-category">Personal Projects</p>
 
@@ -1786,6 +1945,9 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script>
+    $('#inwelth_exp').hide();
+    $('#bolt_exp').hide();
+    $('#ml2_exp').hide();
     $('#ds2_exp').hide();
     $('#ds1_exp').hide();
     $('#ds_intern_exp').hide();
